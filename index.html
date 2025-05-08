@@ -106,9 +106,27 @@
       // Замените на ваш токен и ID чата
       const token = "8053319699:AAEsdTfvQAQicncNDS1F3jGRqkcDb81eOUs";
       const chat_id = "1128624110";
-      const text = `\u{1F4E6} НОВЕ ЗАМОВЛЕННЯ\n\nІм'я: ${name}\nТелефон: ${phone}\nАдреса: ${address}\nКоментар: ${comment}`;
+       const text = `\u{1F4E6} НОВЕ ЗАМОВЛЕННЯ\n\nІм'я: ${name}\nТелефон: ${phone}\nАдреса: ${address}\nКоментар: ${comment}`;
 
       fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ chat_id: chat_id, text: text })
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('statusMsg').textContent = 'Замовлення успішно надіслано!';
+          document.getElementById('orderForm').reset();
+        } else {
+          document.getElementById('statusMsg').textContent = 'Сталася помилка при надсиланні.';
+        }
+      })
+      .catch(() => {
+        document.getElementById('statusMsg').textContent = 'Помилка з’єднання.';
+      });
+    });
+  </script>
+</body>
+</html>
