@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Умные Wi-Fi Розетки</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          },
+          colors: {
+            primary: '#2563EB',
+            secondary: '#1E293B'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-white text-secondary font-sans">
+  <!-- Hero Section -->
+  <header class="bg-primary text-white py-12 px-6 text-center fade-in">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Умные Wi-Fi розетки</h1>
+    <p class="text-lg md:text-xl mb-6">Управляй электроприборами из любой точки мира</p>
+    <a href="#order" class="bg-white text-primary font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition">Заказать сейчас</a>
+  </header>
+
+  <!-- Product Image & Features -->
+  <section class="py-12 px-6 text-center fade-in">
+    <!-- Замените src на путь к изображению вашей розетки -->
+    <img src="img/socket.jpg" alt="Умная розетка" class="mx-auto mb-8 rounded-2xl shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-semibold mb-4">Контроль. Экономия. Безопасность.</h2>
+    <p class="text-gray-700 max-w-xl mx-auto">С приложением на смартфоне вы включаете и выключаете розетку в одно касание, даже если находитесь в другой стране. Идеально для отопления, освещения, бойлеров и многого другого.</p>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="bg-gray-100 py-12 px-6 fade-in">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="p-6 bg-white rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Управление с телефона</h3>
+        <p class="text-gray-600">Работает с iOS и Android через удобное приложение.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Таймер и расписания</h3>
+        <p class="text-gray-600">Автоматизируй включение и выключение в нужное время.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Экономия электроэнергии</h3>
+        <p class="text-gray-600">Отключай неиспользуемые устройства — экономь до 30% в месяц.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-12 px-6 text-center fade-in">
+    <h2 class="text-3xl font-bold mb-4">Начни использовать умные технологии уже сегодня</h2>
+    <p class="text-gray-700 mb-6">Легкая установка. Без лишних проводов. Подключай и управляй!</p>
+    <a href="#order" class="bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition">Оформить заказ</a>
+  </section>
+
+  <!-- Order Form -->
+  <section id="order" class="bg-gray-50 py-12 px-6 fade-in">
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Форма заказа</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Ваше имя" class="w-full border border-gray-300 p-3 rounded-xl" required>
+        <input type="tel" placeholder="Телефон" class="w-full border border-gray-300 p-3 rounded-xl" required>
+        <input type="text" placeholder="Адрес доставки" class="w-full border border-gray-300 p-3 rounded-xl" required>
+        <button type="submit" class="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition">Заказать</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    &copy; 2025 Умные Розетки. Все права защищены.
+  </footer>
+</body>
+</html>
