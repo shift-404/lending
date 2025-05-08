@@ -15,8 +15,8 @@
           },
           colors: {
             primary: '#2563EB', // Синий цвет для шапки
-            darkbg: '#141516',  // Основной тёмный фон
-            graysection: '#141516' // Единый цвет для всех блоков
+            darkbg: '#ffffff',  // Белый фон как раньше
+            graysection: '#F3F4F6' // Светло-серый фон блоков
           }
         }
       }
@@ -33,7 +33,7 @@
     }
   </style>
 </head>
-<body class="bg-darkbg text-white font-sans">
+<body class="bg-darkbg text-gray-900 font-sans">
   <!-- Хедер с заголовком и кнопкой -->
   <header class="bg-primary text-white py-12 px-6 text-center fade-in">
     <h1 class="text-4xl md:text-5xl font-bold mb-4">Розумні Wi-Fi розетки</h1>
@@ -46,23 +46,23 @@
     <!-- Замените src на путь к изображению вашей розетки -->
     <img src="img/socket.jpg" alt="Розумна розетка" class="mx-auto mb-8 rounded-2xl shadow-lg w-full max-w-md">
     <h2 class="text-2xl font-semibold mb-4">Контроль. Економія. Безпека.</h2>
-    <p class="text-gray-300 max-w-xl mx-auto">Застосунок на смартфоні дозволяє вмикати й вимикати розетку одним дотиком, навіть якщо ви за кордоном. Ідеально для обігрівачів, освітлення, бойлерів та багато чого іншого.</p>
+    <p class="text-gray-700 max-w-xl mx-auto">Застосунок на смартфоні дозволяє вмикати й вимикати розетку одним дотиком, навіть якщо ви за кордоном. Ідеально для обігрівачів, освітлення, бойлерів та багато чого іншого.</p>
   </section>
 
   <!-- Сітка з перевагами -->
   <section class="bg-graysection py-12 px-6 fade-in">
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-white rounded-2xl shadow-md">
         <h3 class="text-xl font-semibold mb-2">Керування з телефону</h3>
-        <p class="text-gray-400">Працює з iOS та Android через зручний застосунок.</p>
+        <p class="text-gray-600">Працює з iOS та Android через зручний застосунок.</p>
       </div>
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-white rounded-2xl shadow-md">
         <h3 class="text-xl font-semibold mb-2">Таймер і розклад</h3>
-        <p class="text-gray-400">Автоматизуйте вмикання та вимикання у потрібний час.</p>
+        <p class="text-gray-600">Автоматизуйте вмикання та вимикання у потрібний час.</p>
       </div>
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-white rounded-2xl shadow-md">
         <h3 class="text-xl font-semibold mb-2">Економія електроенергії</h3>
-        <p class="text-gray-400">Вимикайте непотрібні пристрої — економте до 30% щомісяця.</p>
+        <p class="text-gray-600">Вимикайте непотрібні пристрої — економте до 30% щомісяця.</p>
       </div>
     </div>
   </section>
@@ -70,19 +70,19 @@
   <!-- Заклик до дії -->
   <section class="bg-graysection py-12 px-6 text-center fade-in">
     <h2 class="text-3xl font-bold mb-4">Почніть використовувати розумні технології вже сьогодні</h2>
-    <p class="text-gray-300 mb-6">Проста установка. Без зайвих дротів. Підключайте та керуйте!</p>
+    <p class="text-gray-700 mb-6">Проста установка. Без зайвих дротів. Підключайте та керуйте!</p>
     <a href="#order" class="bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition">Оформити замовлення</a>
   </section>
 
   <!-- Форма замовлення -->
   <section id="order" class="bg-graysection py-12 px-6 fade-in">
-    <div class="max-w-xl mx-auto bg-gray-900 p-8 rounded-2xl shadow-md">
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-md">
       <h2 class="text-2xl font-semibold mb-6 text-center">Форма замовлення</h2>
       <form id="orderForm" class="space-y-4">
-        <input type="text" name="name" placeholder="Ваше ім'я" class="w-full border border-gray-700 bg-gray-800 text-white p-3 rounded-xl" required>
-        <input type="tel" name="phone" placeholder="Телефон" class="w-full border border-gray-700 bg-gray-800 text-white p-3 rounded-xl" required>
-        <input type="text" name="address" placeholder="Адреса доставки" class="w-full border border-gray-700 bg-gray-800 text-white p-3 rounded-xl" required>
-        <textarea name="comment" placeholder="Коментар (необов'язково)" class="w-full border border-gray-700 bg-gray-800 text-white p-3 rounded-xl"></textarea>
+        <input type="text" name="name" placeholder="Ваше ім'я" class="w-full border border-gray-300 bg-white text-gray-900 p-3 rounded-xl" required>
+        <input type="tel" name="phone" placeholder="Телефон" class="w-full border border-gray-300 bg-white text-gray-900 p-3 rounded-xl" required>
+        <input type="text" name="address" placeholder="Адреса доставки" class="w-full border border-gray-300 bg-white text-gray-900 p-3 rounded-xl" required>
+        <textarea name="comment" placeholder="Коментар (необов'язково)" class="w-full border border-gray-300 bg-white text-gray-900 p-3 rounded-xl"></textarea>
         <button type="submit" class="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition">Замовити</button>
       </form>
       <p id="statusMsg" class="text-center mt-4 text-sm"></p>
@@ -112,21 +112,3 @@
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ chat_id: chat_id, text: text })
-      })
-      .then(response => {
-        if (response.ok) {
-          document.getElementById('statusMsg').textContent = 'Замовлення успішно надіслано!';
-          document.getElementById('orderForm').reset();
-        } else {
-          document.getElementById('statusMsg').textContent = 'Сталася помилка при надсиланні.';
-        }
-      })
-      .catch(() => {
-        document.getElementById('statusMsg').textContent = 'Помилка з’єднання.';
-      });
-    });
-  </script>
-</body>
-</html>
