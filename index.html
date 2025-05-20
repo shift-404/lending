@@ -41,7 +41,7 @@
   </header>
 
   <section class="bg-graysection py-12 px-6 text-center fade-in">
-    <img src="img/spoon.jpg" alt="Мірна ложка-ваги" class="mx-auto mb-4 rounded-2xl shadow-lg w-full max-w-md">
+    <img src="img/1.jpg" alt="Мірна ложка-ваги" class="mx-auto mb-4 rounded-2xl shadow-lg w-full max-w-md">
     <p class="text-xl font-bold text-primary mb-6">Ціна: 144 грн</p>
     <h2 class="text-2xl font-semibold mb-4">Компактність. Точність. Зручність.</h2>
     <p class="text-gray-700 max-w-xl mx-auto">Цифрова ложка-ваги — незамінний помічник на кухні для тих, хто цінує точність у приготуванні страв. Ідеально підходить для зважування спецій, кави, чаю, добавок та іншого.</p>
@@ -96,8 +96,8 @@
       const address = this.address.value;
       const comment = this.comment.value;
 
-      const token = "YOUR_TELEGRAM_BOT_TOKEN";
-      const chat_id = "YOUR_TELEGRAM_CHAT_ID";
+      const token = "8053319699:AAEsdTfvQAQicncNDS1F3jGRqkcDb81eOUs";
+      const chat_id = "1128624110";
       const text = `\u{1F4E6} НОВЕ ЗАМОВЛЕННЯ\n\nІм'я: ${name}\nТелефон: ${phone}\nАдреса: ${address}\nКоментар: ${comment}`;
 
       fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
